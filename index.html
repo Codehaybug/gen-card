@@ -346,11 +346,11 @@
       
       // Tạo thông tin giả lập cho form
       const day = Math.floor(Math.random() * 28) + 1;
-      const year = 1998 + Math.floor(Math.random() * 8); // Từ 1998-2005
+      const year = Math.floor(Math.random() * (2007 - 2005 + 1)) + 2005; 
       const months = ['January', 'February', 'March', 'April', 'May', 'June', 
                      'July', 'August', 'September', 'October', 'November', 'December'];
       const month = months[Math.floor(Math.random() * months.length)];
-      const email = `${firstName.toLowerCase()}.${lastName.toLowerCase().replace(/\s+/g, '')}@gmail.com`;
+      const email = `${firstName.toLowerCase()}.${lastName.toLowerCase().replace(/\s+/g, '')}@student.edu`;
 
       const jsScript = `(async () => {
   const delay = ms => new Promise(r => setTimeout(r, ms));
